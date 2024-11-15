@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main{
+    height: 1000vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+.main .header{
+    height: 0.75%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: Aeonik-Medium, "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+    
+}
+
+.header > a{
+    text-decoration: none;
+    color: rgb(190, 188, 188);
+    position: relative;
+}
+
+.header > a:hover{
+    color: #ffffff;
+
+}
+.header > a::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+.header > a:hover::before{
+    width: 100%;
+
+}
+
+.header > select {
+    font-family: Aeonik-Medium, "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+}
+nav{
+    background: #d4cccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 83px;
+    position: relative;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 30%;
+    gap: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    color: white;
+    background-color: black;
+    padding: 15px;
+}
+nav  a{
+    margin-right: 10%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+nav p{
+    font-family: georgia;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10%;
+}
+nav .btn1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.btn1:hover{
+    background-color: #5168e8; 
+    transform: scale(1.05);
+}
+nav .btn2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.btn2:hover{
+    color: #5168e8; 
+    transform: scale(1.05);
+}
+.container{
+    height: 550px;
+    width: 100%;
+    background-color: #5168e8;
+    margin-top: 1px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.left{
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-left: 70px;
+}
+
+.left h1{
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.left p{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.left button{
+    padding: 20px 50px;
+    margin-top: 60px;
+    
+}
+
+.left .bn1{
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: all 0.2s ease-in;
+}
+.bn1:hover{
+    color: #ffffff;
+    background-color: black; 
+    transform: scale(1.05);
+}
+.left .bn2{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.041);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    margin-left: 10px;
+    transition: all 0.2s ease-in;
+}
+.bn2:hover{
+    color: #aab1d5; 
+    transform: scale(1.05);
+}
+.right{
+    height: 550px;
+    width: 760px;
+    background-image: url(https://img.freepik.com/free-photo/low-angle-businesswoman-posing-with-arms-crossed-outdoors_23-2148767034.jpg?w=996&t=st=1726129976~exp=1726130576~hmac=17d357b9c6a9418aa4a03c3f0c6a165703640a246e9fec881dd4ea40a326505d);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.container2 > h1{
+    font-size: 45px;
+    font-weight: 500;
+    color: #171010;
+    padding-left: 100px;
+    padding-top: 100px;  
+}
+
+.container3{
+    height: 170vh;
+    width: 100%;
+    background-color: rgb(233, 203, 166);
+    border-radius: 45px;
+    margin-top: 10%;
+
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px;  
+
+}
+.content h1{
+    font-weight: 500;
+    font-size: 35px;
+}
+.content p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.content .partC{
+    padding-bottom: 195px;
+}
+
+.content2{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap:30px
+}
+.content2 > .part1{
+    height: 650px;
+    width: 550px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.content2 > .part1 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content2 > .part1 h1{
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left: 50px;
+}
+.content2 > .part1 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-left: 50px;
+    color: rgb(154, 137, 105);
+    padding-bottom: 65px;
+}
+
+.content2 > .part1 a{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 55px;
+    padding-left: 50px;
+    color: rgb(12, 11, 10);
+
+}
+.content2 .part2{
+    height: 650px;
+    width: 550px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+.content2 > .part2 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+.content2 > .part2 h1{
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left: 50px;
+}
+.content2 > .part2 p{
+    color: rgb(154, 137, 105);
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+}
+.content2 > .part2 a{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 35px;
+    padding-left: 50px;
+    color: rgb(12, 11, 10);
+
+}
